@@ -27,14 +27,14 @@ export function ProfileView({ user, isOwn = false }: Props) {
             <div className="absolute top-4 right-10 w-28 h-28 rounded-full bg-accent blur-2xl" />
           </div>
         </div>
-        <div className="px-6 pb-6 -mt-12 sm:-mt-14">
+        <div className="px-6 pb-6">
           <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
-            <div className="flex items-end gap-4">
-              <Avatar className="h-24 w-24 sm:h-28 sm:w-28 ring-4 ring-white shadow-card">
+            <div className="flex flex-col sm:flex-row sm:items-end gap-4">
+              <Avatar className="h-24 w-24 sm:h-28 sm:w-28 -mt-12 sm:-mt-14 ring-4 ring-white shadow-card">
                 <AvatarImage src={user.avatar} alt={user.name} />
                 <AvatarFallback className="text-2xl">{initials(user.name)}</AvatarFallback>
               </Avatar>
-              <div className="pb-1">
+              <div className="pt-2 sm:pb-1">
                 <h1 className="font-display text-2xl font-bold text-ink">{user.name}</h1>
                 <p className="text-sm text-ink-muted">
                   {user.course} · {user.semester}º semestre
