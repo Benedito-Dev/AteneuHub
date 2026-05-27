@@ -1,13 +1,17 @@
 {
   "name": "ateneuhub",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
+  "engines": {
+    "node": ">=20.0.0"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "typecheck": "tsc -b"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.1",
